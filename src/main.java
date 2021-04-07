@@ -3,6 +3,7 @@ public class main {
 
 	public static void main(String[] args) {
 		/*
+		 * To run the program click main.java in the left side panel <--- there click run as -> java application
 		 * 1. Punta ka muna sa shape class then basahin mo ung mga comments
 		 * 2. Punta ka naman sa triangle class for next set of comments
 		 */
