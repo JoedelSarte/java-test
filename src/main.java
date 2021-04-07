@@ -2,19 +2,27 @@
 public class main {
 
 	public static void main(String[] args) {
-		String text = "programming";
-		String[] text_array = text.split(""); /*split will return an array object based on the delimiter used*/
-		for (int x=0; x<text_array.length; x++) { /*basic structure of for loop first is your control variable 
-													then the condition hence x<test_array.length the loop will 
-													continue to perform the operations inside the for loop until 
-													it no longer satisfies the condition third is your control so 
-													that the loop will not loop endlessly here it will increment 
-													your control variable until the condition no longer satisfies or hit false*/
-			System.out.println(text_array[x]);	/* In order to access every element in array you need to access it by providing the index
-			 									   hence test_array[x], every array the initial index always starts at 0 that's why you can 
-			 									   see in our control variable in the for loop we set the x to be 0*/
-		}
-
+		/*
+		 * 1. Punta ka muna sa shape class then basahin mo ung mga comments
+		 * 2. Punta ka naman sa triangle class for next set of comments
+		 */
+		Triangle triangle = new Triangle(); /*this is how we initiate a new object so technically magsstart sya */
+		triangle.setDescription("This is a triangle shape"); /*so from the triangle class pwede nating maaccess ung mga properties ni Shape class*/
+		triangle.setNumberOfSides(3);
+		triangle.getShapeDescription();
+		
+		/*
+		 * Punta ka sa square class para sa comments ulit
+		 */
+		
+		Square square = new Square();
+		square.setDescription("This is a square shape"); /*So eto dahil namana pa dn natin from our parent class ung property na description
+													 	and ung number of sides pwede pa dn natin syang gamitin*/
+		square.setNumberOfSides(2);					 
+		square.getShapeDescription();				  /*So ayun nga dahil nagmethod override tayo na dapat ang llabas sana dto is this is a 
+														square shape ang llabas dto is Hey this is square!*/
+		square.getShapeDescription("Blue");			  /*So dto naman makkita mo ung implementation ng method overloading kung saan pnasa 
+		 												natin ung string na "Blue" as a parameter then ang illabas nya na description eh iba*/
 	}
 
 }
