@@ -6,7 +6,9 @@ public class Square extends Shape {
 	 * of polymorphism. So bakit ksi alam naman natin na meron ng method si Shape class 
 	 * which is inextend natin at ininherit natin pero gnwan natin sya ng bagong sets of
 	 * instruction na instead na pnprint natin is ung default na nakay shape class eh eto
-	 * ung gngawa nya or pnprint nya.
+	 * ung gngawa nya or pnprint nya. As long as wala kang bnago sa getShapeDescription the return type
+	 * or mga parameters nya ang tawag dun is method overriding. Inooverride mo lang ung instruction
+	 * sa loob ng function
 	 */
 	public void getShapeDescription() {
 		System.out.println("Hey this is square!");
