@@ -13,7 +13,7 @@ public class DbConnector {
 	 * na gngamit pero eto ung common na way so nanjan pnapasa natin ung username password tska ung url ung url format is
 	 * "address:port/db_name" then irreturn lang natin ung connection so makkita mo sa lahat ng methods natin nagtthrow tayo ng 
 	 * SQLException ksi possible na makaencounter tayo ng error kunwari nakadown ung db server di tayo makaconnect dapat mahandle natin
-	 * ung scenario na un kaya nagtthrow tayo ng exception.
+	 * ung scenario na un kaya nagtthrow tayo ng exception. So need mong palitan username and password based sa snet mo sa local instance mo.
 	 */
 	public Connection getConnection() throws SQLException {
 		MysqlDataSource dataSource = new MysqlDataSource();
